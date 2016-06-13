@@ -39,7 +39,8 @@ export default Ember.Component.extend({
         city: cityFromForm,
         type: typeFromForm,
         image: imageFromForm,
-        bedrooms: this.get('bedrooms'),//if left blank, this will not save to Firebase.
+        bedrooms: this.get('bedrooms'),
+        cost: parseInt(this.get('cost'))
       };
       console.log(params);
       this.set('addNewRental', false);
